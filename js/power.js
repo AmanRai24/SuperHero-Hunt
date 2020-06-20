@@ -78,26 +78,21 @@ const Info=(function(){
                     </div>
                 </div>`;
         }
-        // information(details);
+        information(details);
     }
 
-    // let SuperHeroDetails;
-    // function information(info){
-    //     SuperHeroDetails=info;
-    // }
+    let SuperHeroDetails;
+    function information(allinfo){
+        SuperHeroDetails=allinfo;
+    }
 
     //Add/Remove from favourites
     function handleDocumentClick(e) {
         const target = e.target;
     
-        if (target.classList.contains('add-to-fav')) {
-            // Find the hero data and store it in favourites and localstorage
-            const searchResultClickedId = target.dataset.id;
-            const hero = searchResults.filter(
-                (hero) => hero.id === searchResultClickedId
-            );
-            Common.addHero();
-            SuperheroInformation();
+        if(target.classList.contains('add-to-fav')){
+            Common.addHero(SuperHeroDetails);
+            SuperheroInformation(SuperHeroDetails);
         } else if (target.classList.contains('remove-from-fav')) {
             // Find the hero data and remove from local storage
             const searchResultClickedId = target.dataset.id;
