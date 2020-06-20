@@ -8,7 +8,7 @@ https://amanrai24.github.io/SuperHero_Hunt_JS/index.html
 
 #Website Functionality:-
  1.Homepage
-   Homepage is very basic and simple.Navigation bar and with search bar to search the superhero.If you type more than 3 letters than search will appear.You can search for any superhero/add it to favourites or know more about it on clicking name of superhero.
+   Homepage is very basic and simple.Navigation bar and with search bar to search the superhero.If you type more than 3 letters than search will appear.You can search for any        Supergero/add it to favourites or know more about it on clicking name of superhero.
    ![Homepage](/images/Homepage.JPG)
 
 2. Profile Page
