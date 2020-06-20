@@ -1,0 +1,170 @@
+*{ 
+ font-family: 'Bangers', cursive;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+/* ---- Header/Navigation Bar ---- */
+.header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: orange;
+    height: 60px;
+}
+
+.title{
+    font-size: 3rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-left: 70px;
+    padding: 7px;
+    color: red;
+    width: 75%;
+}
+
+.navigation{
+    display: flex;
+    background-color: orange;
+    color: black;
+    flex-direction: row;
+    font-size: 2rem;
+    align-items: flex-end;
+    padding: 12px;
+}
+
+
+/* ---- Search Input ---- */
+.main{
+    position: relative;
+    margin-top: 20px;
+}
+
+#input{
+    text-align: center;
+}
+
+#search{
+    height: 30px;
+    width: 40%;
+    font-size: 20px;
+}
+#submit{
+    height: 30px;
+}
+
+/* ----- loader ---- */
+.loader {
+    border: 10px solid;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border-color: black transparent transparent;
+    animation: spin 1s linear infinite;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: none;
+  }
+  
+  @keyframes spin {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+/* ---- display results ---- */
+#search-result-list{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: space-evenly;
+}
+.search-result{
+    width: 330px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    border: 1px solid;
+    padding: 3px;
+}
+.search-left img{
+    height: 298px;
+    width: 200px;
+}
+.search-right {
+  padding-left: 20px;
+  padding-top: 10px;
+  position: relative;
+}
+
+.search-right a:hover {
+  text-decoration: underline;
+}
+
+.name{ 
+    font-size: 25px;
+    color: black;
+}
+
+.full-name{
+    color:red;
+    font-size: 20px;
+}
+
+.address{
+    color: gray;
+    font-size: 18px;
+}
+
+.btn {
+    margin-top: 20px;
+    color: white;
+    outline: none;
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+  }
+  .btn:hover {
+    cursor: pointer;
+  }
+  .add-to-fav {
+    margin-top: 20px;
+    background: orange;
+  }
+  .remove-from-fav {
+    margin-top: 20px;
+    background: #f44336;
+  }
+
+  /* ----  Notification ---- */
+  #toast {
+    position: fixed;
+    top: 65px;
+    right: 15px;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: none;
+  }
+  .toast-error {
+    background: red;
+  }
+  .toast-success {
+    background: green;
+  }
+
+  .not-found {
+    background: orange;
+    color: black;
+    padding: 10px;
+    border-radius: 3px;
+    margin-top: 20px;
+  }

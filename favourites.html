@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperHero | JS</title>
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!---Google font for font-->
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/power.css">
+</head>
+<body>
+    <!------Navigation Bar/Title ------>
+    <div class="header">
+        <div class="title">
+            <span>SuperHero Hunt</span>
+        </div>
+        <div class="navigation">
+            <a href="./index.html">HOME</a>&emsp;&emsp;&emsp;
+            <a href="#">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+    </div>
+
+    <!---display Fav. Superheros----> 
+    <main class="main">
+
+        <!---Display loading-->
+        <div class="loader"></div>
+        
+        <ul id="search-result-list">
+             <!-- <li class="search-result">
+                <div class="search-left">
+                    <img src="./images/bats.jpg" alt="" />
+                </div>
+                <div class="search-right">
+                    <a href="./superHero.html">
+                        <div class="name">Batman</div>
+                    </a>
+                    <div class="full-name">Terry McGinnis</div>
+
+                    <div class="address">Gotham City, 25th Century</div>
+                    <button class="btn add-to-fav">Add to favourites</button>
+                    <button class="btn remove-from-fav">Remove from favourites</button>
+                </div>
+            </li> -->     
+        </ul>
+    </main>
+
+    <!---Notification---->
+    <div id="toast"></div>
+
+    <!--Js files-->
+    <script src="./js/common.js"></script>
+    <script src="./js/favourites.js"></script>
+    <script>
+        Fav.init();
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperHero | JS</title>
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/power.css">
+</head>
+<body>
+    <!------Navigation Bar/Title ------>
+    <div class="header">
+        <div class="title">
+            <span>SuperHero Hunt</span>
+        </div>
+        <div class="navigation">
+            <a href="./index.html">HOME</a>&emsp;
+            <a href="./favourites.html">Favourites</a>&emsp;
+            <a href="#">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+    </div>
+
+    <!---display loading------>
+    <div class="loader"></div>
+
+     <!--SuperHero Information--->
+    <div class="Info-details"> </div>
+
+    <!-------Notification ---- -->
+    <div id="toast"></div>
+
+    
+    <script src="./js/common.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/power.js"></script>
+    
+    <script>
+        Info.init();
+    </script>
+</body>
+</html>

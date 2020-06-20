@@ -1,0 +1,65 @@
+*{ 
+    font-family: 'Bangers', cursive;
+}
+
+.Info-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+/* ---- if error comes ---- */
+.error{
+    height: auto;
+    width: auto;
+    background-color: red;
+    color: white;
+    padding: 5px 5px 5px 5px;
+}
+/* ----Hero Image Container---- */
+.HeroImg{
+    display: flex;
+    flex-direction: column;
+    margin-left: 550px;
+    width: 300px;
+}
+
+.HeroImg img{
+    width: 300px;
+    height: 500px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#style{
+    font-size: 3rem;
+    text-align: center;
+}
+
+/* ----Super Hero Div---- */
+.Allinfo{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.info {
+    background-color:lightblue;
+    margin: 5px;
+    width: 100%;
+    border: 1px solid black;
+    align-items: center;
+}
+.info-title{
+    color: red;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 5px;
+}
+.info h3{
+    margin-left: 60px;
+    color: black;
+}
+.info h3 span{
+    color:red;
+}
