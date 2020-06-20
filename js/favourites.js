@@ -21,7 +21,7 @@ const Fav= (function(){
                                 <img src=${data.image.url} alt="" />
                             </div>
                             <div class="search-right">
-                                <a href="./superHero.html?id=${data.id}">
+                                <a href="./Power.html?id=${data.id}">
                                     <div class="name">${data.name}</div>
                                 </a>
                                 <div class="full-name">${data.biography['full-name']}</div>
