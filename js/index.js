@@ -31,7 +31,7 @@ const Main= (function(){
                         <img src=${element.image.url} alt="" />
                     </div>
                     <div class="search-right">
-                        <a href="power.html?id=${element.id}">
+                        <a href="Power.html?id=${element.id}">
                             <div class="name">${element.name}</div>
                         </a>
                         <div class="full-name">${element.biography['full-name']}</div>
